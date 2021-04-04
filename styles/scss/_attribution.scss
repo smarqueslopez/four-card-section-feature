@@ -1,0 +1,11 @@
+.attribution {
+    margin-bottom: 2rem;
+    font-size: 11px;
+    a {
+        color: $link-blue;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "four-card-section-feature",
+  "version": "1.0.0",
+  "description": "Frontend Mentor - Four Card Section Feature",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -w styles/scss -o styles --output-style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smarqueslopez/four-card-section-feature.git"
+  },
+  "keywords": [
+    "challenge-solution-code",
+    "frontend-mentor-challenge"
+  ],
+  "author": "smarqueslopez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/smarqueslopez/four-card-section-feature/issues"
+  },
+  "homepage": "https://github.com/smarqueslopez/four-card-section-feature#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

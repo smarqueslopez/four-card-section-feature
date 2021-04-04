@@ -1,0 +1,48 @@
+.header {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+    &__title-container,
+    &__subtitle-container,
+    &__description-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-items: center;
+        justify-content: center;
+    }
+
+    .title {
+        font-size: 3.5rem;
+        font-weight: $font-weight-light;
+        color: $very-dark-blue;
+    }
+
+    .subtitle {
+        font-size: 3.5rem;
+        font-weight: $font-weight-bold;
+        color: $very-dark-blue;
+        margin-bottom: 2rem;
+    }
+
+    .description {
+        font-size: 1.5rem;
+        font-weight: $font-weight-normal;
+    }
+
+    @include mobile {
+        width: 100%;
+        padding: 2rem;
+        .title,
+        .subtitle {
+            font-size: 2.5rem;
+        }
+        .description {
+            font-size: 1.5rem;
+        }
+    }
+}

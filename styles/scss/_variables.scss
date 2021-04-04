@@ -1,0 +1,43 @@
+/* Mixins */
+@mixin mobile {
+    @media (max-width: $vp-mobile) {
+        @content;
+    }
+}
+
+/** Viewports */
+$vp-mobile: 725px;
+$vp-desktop: 1440px;
+
+/* Colors */
+
+/* Primary */
+$red: hsl(0, 78%, 62%);
+$cyan: hsl(180, 62%, 55%);
+$orange: hsl(34, 97%, 64%);
+$blue: hsl(212, 86%, 64%);
+
+/* Neutral */
+$white: hsl(0, 0%, 100%);
+$very-dark-blue: hsl(234, 12%, 34%);
+$grayish-blue: hsl(229, 6%, 66%);
+$very-light-gray: hsl(0, 0%, 98%);
+
+/* Others */
+$link-blue: hsl(228, 45%, 44%);
+$background-color-body: #efefef;
+$color-shadow: #c9cbd2;
+
+/* Fonts */
+
+/* Font Family */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+$font-family-body: "Poppins", sans-serif;
+
+/* Sizes */
+$font-size: 15px;
+
+/* Font-weights */
+$font-weight-light: 200;
+$font-weight-normal: 400;
+$font-weight-bold: 600;

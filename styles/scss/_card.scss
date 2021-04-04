@@ -44,29 +44,109 @@
 
     &.supervisor {
         border-top: 5px solid $cyan;
+
         [class$="__image-container"] .image {
             background-image: url("../images/icon-supervisor.svg");
+        }
+
+        &:hover {
+            animation: float-right 1.5s ease-in-out infinite;
         }
     }
 
     &.team-builder {
         border-top: 5px solid $red;
+
         [class$="__image-container"] .image {
             background-image: url("../images/icon-team-builder.svg");
+        }
+
+        &:hover {
+            animation: float-up 1.5s ease-in-out infinite;
         }
     }
 
     &.karma {
         border-top: 5px solid $orange;
+
         [class$="__image-container"] .image {
             background-image: url("../images/icon-karma.svg");
+        }
+
+        &:hover {
+            animation: float-down 1.5s ease-in-out infinite;
         }
     }
 
     &.calculator {
         border-top: 5px solid $blue;
+
         [class$="__image-container"] .image {
             background-image: url("../images/icon-calculator.svg");
         }
+
+        &:hover {
+            animation: float-left 1.5s ease-in-out infinite;
+        }
+    }
+
+    @include mobile {
+        &.supervisor,
+        &.team-builder,
+        &.karma,
+        &.calculator {
+            &:hover {
+                animation: none;
+            }
+        }
+    }
+
+}
+
+@keyframes float-up {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-20px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+@keyframes float-right {
+    0% {
+        transform: translatex(0px);
+    }
+    50% {
+        transform: translatex(20px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes float-down {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(20px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+@keyframes float-left {
+    0% {
+        transform: translatex(0px);
+    }
+    50% {
+        transform: translatex(-20px);
+    }
+    100% {
+        transform: translateX(0px);
     }
 }
